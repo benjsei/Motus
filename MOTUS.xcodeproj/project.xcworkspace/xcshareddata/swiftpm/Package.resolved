@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "XCTest_Gherkin",
+        "repositoryURL": "https://github.com/PierreEc/XCTest-Gherkin.git",
+        "state": {
+          "branch": "feature/RessourcesWithSPM",
+          "revision": "3b48b9b7ff725d7f8057a3b9f6bb7b3500e4b033",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

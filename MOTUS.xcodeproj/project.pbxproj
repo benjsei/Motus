@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B4C00BB27D2560E00A9B74B /* MOTUSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C00BA27D2560E00A9B74B /* MOTUSApp.swift */; };
+		6B4C00BD27D2560E00A9B74B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C00BC27D2560E00A9B74B /* ContentView.swift */; };
+		6B4C00BF27D2561100A9B74B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B4C00BE27D2561100A9B74B /* Assets.xcassets */; };
+		6B4C00C227D2561100A9B74B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B4C00C127D2561100A9B74B /* Preview Assets.xcassets */; };
+		6B4C00E627D256CC00A9B74B /* MotusTest.feature in Resources */ = {isa = PBXBuildFile; fileRef = 6B4C00E427D256CC00A9B74B /* MotusTest.feature */; };
+		6B4C00E727D256CC00A9B74B /* MotusTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C00E527D256CC00A9B74B /* MotusTest.swift */; };
+		6B4C00E927D2578A00A9B74B /* lexiques in Resources */ = {isa = PBXBuildFile; fileRef = 6B4C00E827D2578A00A9B74B /* lexiques */; };
+		6B4C00F027D27BB200A9B74B /* XCTest_Gherkin in Frameworks */ = {isa = PBXBuildFile; productRef = 6B4C00EF27D27BB200A9B74B /* XCTest_Gherkin */; };
+		6B4C00F227D27C3600A9B74B /* StepDefiner+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C00F127D27C3600A9B74B /* StepDefiner+Helper.swift */; };
+		6B4C013827D2829D00A9B74B /* Motus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C013027D2829D00A9B74B /* Motus.swift */; };
+		6B4C013A27D2829D00A9B74B /* Critere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C013227D2829D00A9B74B /* Critere.swift */; };
+		6B4C014527D2831B00A9B74B /* Collection+Rechercher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C013F27D2831B00A9B74B /* Collection+Rechercher.swift */; };
+		6B4C014627D2831B00A9B74B /* StringIndex+Rechercher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C014027D2831B00A9B74B /* StringIndex+Rechercher.swift */; };
+		6B4C014727D2831B00A9B74B /* Array+Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C014127D2831B00A9B74B /* Array+Filter.swift */; };
+		6B4C014827D2831B00A9B74B /* StringProtocol+Rechercher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C014227D2831B00A9B74B /* StringProtocol+Rechercher.swift */; };
+		6B4C014927D2831B00A9B74B /* String+EstCorrespondant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C014327D2831B00A9B74B /* String+EstCorrespondant.swift */; };
+		6B4C014A27D2831B00A9B74B /* String+Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C014427D2831B00A9B74B /* String+Modifier.swift */; };
+		6B4C014C27D2837000A9B74B /* Chaines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C014B27D2837000A9B74B /* Chaines.swift */; };
+		6B4C014E27D283F600A9B74B /* Proposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C014D27D283F600A9B74B /* Proposition.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6B4C00C827D2561200A9B74B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6B4C00AF27D2560E00A9B74B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B4C00B627D2560E00A9B74B;
+			remoteInfo = MOTUS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6B4C00B727D2560E00A9B74B /* MOTUS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOTUS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B4C00BA27D2560E00A9B74B /* MOTUSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOTUSApp.swift; sourceTree = "<group>"; };
+		6B4C00BC27D2560E00A9B74B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6B4C00BE27D2561100A9B74B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B4C00C127D2561100A9B74B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6B4C00C727D2561200A9B74B /* MOTUSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOTUSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B4C00E427D256CC00A9B74B /* MotusTest.feature */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MotusTest.feature; sourceTree = "<group>"; };
+		6B4C00E527D256CC00A9B74B /* MotusTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotusTest.swift; sourceTree = "<group>"; };
+		6B4C00E827D2578A00A9B74B /* lexiques */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lexiques; sourceTree = "<group>"; };
+		6B4C00F127D27C3600A9B74B /* StepDefiner+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StepDefiner+Helper.swift"; sourceTree = "<group>"; };
+		6B4C013027D2829D00A9B74B /* Motus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motus.swift; sourceTree = "<group>"; };
+		6B4C013227D2829D00A9B74B /* Critere.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Critere.swift; sourceTree = "<group>"; };
+		6B4C013F27D2831B00A9B74B /* Collection+Rechercher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Rechercher.swift"; sourceTree = "<group>"; };
+		6B4C014027D2831B00A9B74B /* StringIndex+Rechercher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StringIndex+Rechercher.swift"; sourceTree = "<group>"; };
+		6B4C014127D2831B00A9B74B /* Array+Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Filter.swift"; sourceTree = "<group>"; };
+		6B4C014227D2831B00A9B74B /* StringProtocol+Rechercher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StringProtocol+Rechercher.swift"; sourceTree = "<group>"; };
+		6B4C014327D2831B00A9B74B /* String+EstCorrespondant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+EstCorrespondant.swift"; sourceTree = "<group>"; };
+		6B4C014427D2831B00A9B74B /* String+Modifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Modifier.swift"; sourceTree = "<group>"; };
+		6B4C014B27D2837000A9B74B /* Chaines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chaines.swift; sourceTree = "<group>"; };
+		6B4C014D27D283F600A9B74B /* Proposition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Proposition.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B4C00B427D2560E00A9B74B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B4C00C427D2561200A9B74B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B4C00F027D27BB200A9B74B /* XCTest_Gherkin in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B4C00AE27D2560E00A9B74B = {
+			isa = PBXGroup;
+			children = (
+				6B4C00B927D2560E00A9B74B /* MOTUS */,
+				6B4C00CA27D2561200A9B74B /* MOTUSTests */,
+				6B4C00B827D2560E00A9B74B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B4C00B827D2560E00A9B74B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B4C00B727D2560E00A9B74B /* MOTUS.app */,
+				6B4C00C727D2561200A9B74B /* MOTUSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B4C00B927D2560E00A9B74B /* MOTUS */ = {
+			isa = PBXGroup;
+			children = (
+				6B4C012D27D2829D00A9B74B /* Moteur */,
+				6B4C00BA27D2560E00A9B74B /* MOTUSApp.swift */,
+				6B4C00BC27D2560E00A9B74B /* ContentView.swift */,
+				6B4C00BE27D2561100A9B74B /* Assets.xcassets */,
+				6B4C00C027D2561100A9B74B /* Preview Content */,
+			);
+			path = MOTUS;
+			sourceTree = "<group>";
+		};
+		6B4C00C027D2561100A9B74B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6B4C00C127D2561100A9B74B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6B4C00CA27D2561200A9B74B /* MOTUSTests */ = {
+			isa = PBXGroup;
+			children = (
+				6B4C00E827D2578A00A9B74B /* lexiques */,
+				6B4C00E427D256CC00A9B74B /* MotusTest.feature */,
+				6B4C00E527D256CC00A9B74B /* MotusTest.swift */,
+				6B4C00F127D27C3600A9B74B /* StepDefiner+Helper.swift */,
+			);
+			path = MOTUSTests;
+			sourceTree = "<group>";
+		};
+		6B4C012D27D2829D00A9B74B /* Moteur */ = {
+			isa = PBXGroup;
+			children = (
+				6B4C014B27D2837000A9B74B /* Chaines.swift */,
+				6B4C013E27D2831B00A9B74B /* Extensions */,
+				6B4C013027D2829D00A9B74B /* Motus.swift */,
+				6B4C014D27D283F600A9B74B /* Proposition.swift */,
+				6B4C013227D2829D00A9B74B /* Critere.swift */,
+			);
+			path = Moteur;
+			sourceTree = "<group>";
+		};
+		6B4C013E27D2831B00A9B74B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6B4C013F27D2831B00A9B74B /* Collection+Rechercher.swift */,
+				6B4C014027D2831B00A9B74B /* StringIndex+Rechercher.swift */,
+				6B4C014127D2831B00A9B74B /* Array+Filter.swift */,
+				6B4C014227D2831B00A9B74B /* StringProtocol+Rechercher.swift */,
+				6B4C014327D2831B00A9B74B /* String+EstCorrespondant.swift */,
+				6B4C014427D2831B00A9B74B /* String+Modifier.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B4C00B627D2560E00A9B74B /* MOTUS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B4C00DB27D2561200A9B74B /* Build configuration list for PBXNativeTarget "MOTUS" */;
+			buildPhases = (
+				6B4C00B327D2560E00A9B74B /* Sources */,
+				6B4C00B427D2560E00A9B74B /* Frameworks */,
+				6B4C00B527D2560E00A9B74B /* Resources */,
+				6B4C014F27D4F47200A9B74B /* SwiftFormat et SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MOTUS;
+			productName = MOTUS;
+			productReference = 6B4C00B727D2560E00A9B74B /* MOTUS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6B4C00C627D2561200A9B74B /* MOTUSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B4C00DE27D2561200A9B74B /* Build configuration list for PBXNativeTarget "MOTUSTests" */;
+			buildPhases = (
+				6B4C00C327D2561200A9B74B /* Sources */,
+				6B4C00C427D2561200A9B74B /* Frameworks */,
+				6B4C00C527D2561200A9B74B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B4C00C927D2561200A9B74B /* PBXTargetDependency */,
+			);
+			name = MOTUSTests;
+			packageProductDependencies = (
+				6B4C00EF27D27BB200A9B74B /* XCTest_Gherkin */,
+			);
+			productName = MOTUSTests;
+			productReference = 6B4C00C727D2561200A9B74B /* MOTUSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B4C00AF27D2560E00A9B74B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					6B4C00B627D2560E00A9B74B = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					6B4C00C627D2561200A9B74B = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 6B4C00B627D2560E00A9B74B;
+					};
+				};
+			};
+			buildConfigurationList = 6B4C00B227D2560E00A9B74B /* Build configuration list for PBXProject "MOTUS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B4C00AE27D2560E00A9B74B;
+			packageReferences = (
+				6B4C00EE27D27BB200A9B74B /* XCRemoteSwiftPackageReference "XCTest-Gherkin" */,
+			);
+			productRefGroup = 6B4C00B827D2560E00A9B74B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B4C00B627D2560E00A9B74B /* MOTUS */,
+				6B4C00C627D2561200A9B74B /* MOTUSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B4C00B527D2560E00A9B74B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B4C00C227D2561100A9B74B /* Preview Assets.xcassets in Resources */,
+				6B4C00BF27D2561100A9B74B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B4C00C527D2561200A9B74B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B4C00E927D2578A00A9B74B /* lexiques in Resources */,
+				6B4C00E627D256CC00A9B74B /* MotusTest.feature in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B4C014F27D4F47200A9B74B /* SwiftFormat et SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftFormat et SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\n  swiftformat . --verbose  --disable wrapMultilineStatementBraces,trailingCommas\nelse\n  echo \"warning: SwiftFormat not installed, download from https://github.com/nicklockwood/SwiftFormat\"\n  exit 0\nfi\n\nif which swiftlint >/dev/null; then\n  swiftlint --config .swiftlint.yml\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n  exit 0\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B4C00B327D2560E00A9B74B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B4C014727D2831B00A9B74B /* Array+Filter.swift in Sources */,
+				6B4C014A27D2831B00A9B74B /* String+Modifier.swift in Sources */,
+				6B4C013827D2829D00A9B74B /* Motus.swift in Sources */,
+				6B4C014927D2831B00A9B74B /* String+EstCorrespondant.swift in Sources */,
+				6B4C014C27D2837000A9B74B /* Chaines.swift in Sources */,
+				6B4C00BD27D2560E00A9B74B /* ContentView.swift in Sources */,
+				6B4C014E27D283F600A9B74B /* Proposition.swift in Sources */,
+				6B4C013A27D2829D00A9B74B /* Critere.swift in Sources */,
+				6B4C014627D2831B00A9B74B /* StringIndex+Rechercher.swift in Sources */,
+				6B4C00BB27D2560E00A9B74B /* MOTUSApp.swift in Sources */,
+				6B4C014827D2831B00A9B74B /* StringProtocol+Rechercher.swift in Sources */,
+				6B4C014527D2831B00A9B74B /* Collection+Rechercher.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B4C00C327D2561200A9B74B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B4C00E727D256CC00A9B74B /* MotusTest.swift in Sources */,
+				6B4C00F227D27C3600A9B74B /* StepDefiner+Helper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6B4C00C927D2561200A9B74B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6B4C00B627D2560E00A9B74B /* MOTUS */;
+			targetProxy = 6B4C00C827D2561200A9B74B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6B4C00D927D2561200A9B74B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6B4C00DA27D2561200A9B74B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B4C00DC27D2561200A9B74B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MOTUS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.seillier.benjamin.MOTUS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B4C00DD27D2561200A9B74B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MOTUS/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.seillier.benjamin.MOTUS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6B4C00DF27D2561200A9B74B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.seillier.benjamin.MOTUSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MOTUS.app/MOTUS";
+			};
+			name = Debug;
+		};
+		6B4C00E027D2561200A9B74B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.seillier.benjamin.MOTUSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MOTUS.app/MOTUS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B4C00B227D2560E00A9B74B /* Build configuration list for PBXProject "MOTUS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B4C00D927D2561200A9B74B /* Debug */,
+				6B4C00DA27D2561200A9B74B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B4C00DB27D2561200A9B74B /* Build configuration list for PBXNativeTarget "MOTUS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B4C00DC27D2561200A9B74B /* Debug */,
+				6B4C00DD27D2561200A9B74B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B4C00DE27D2561200A9B74B /* Build configuration list for PBXNativeTarget "MOTUSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B4C00DF27D2561200A9B74B /* Debug */,
+				6B4C00E027D2561200A9B74B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6B4C00EE27D27BB200A9B74B /* XCRemoteSwiftPackageReference "XCTest-Gherkin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PierreEc/XCTest-Gherkin.git";
+			requirement = {
+				branch = feature/RessourcesWithSPM;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6B4C00EF27D27BB200A9B74B /* XCTest_Gherkin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B4C00EE27D27BB200A9B74B /* XCRemoteSwiftPackageReference "XCTest-Gherkin" */;
+			productName = XCTest_Gherkin;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6B4C00AF27D2560E00A9B74B /* Project object */;
+}
