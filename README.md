@@ -1,6 +1,7 @@
 # motus
 
 Algorithme pour jouer à Wordle de façon optimale, développé en SWIFT et FullBDD.
+
 Inspiration : https://www.youtube.com/watch?v=iw4_7ioHWF4&t=1s
 
 # Fonctionnalités
