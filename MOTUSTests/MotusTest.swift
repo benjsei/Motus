@@ -32,16 +32,23 @@ class MotusTest: XCTestCase {
                                  mapStepDefiner: MotusStepsDefinition.self)
     }
 
-    func test_motus_proposerLeMotOptimalPourDuVrai() {
+//    func test_motus_proposerLeMotOptimalPourDuVrai() {
+//        NativeRunner.runScenario(featureFile: "MotusTest.feature",
+//                                 scenario: "Proposer le mot optimal sur le Lexique de WORDLE FR",
+//                                 testCase: self,
+//                                 mapStepDefiner: MotusStepsDefinition.self)
+//    }
+
+    func test_motus_proposerLeMotOptimalPourDuVraiaprerspremierereponse_FR() {
         NativeRunner.runScenario(featureFile: "MotusTest.feature",
-                                 scenario: "Proposer le mot optimal sur le Lexique de WORDLE",
+                                 scenario: "Proposer le mot optimal sur le Lexique de WORDLE FR après plusieurs tentatives",
                                  testCase: self,
                                  mapStepDefiner: MotusStepsDefinition.self)
     }
 
-    func test_motus_proposerLeMotOptimalPourDuVraiaprerspremierereponse() {
+    func test_motus_proposerLeMotOptimalPourDuVraiaprerspremierereponse_EN() {
         NativeRunner.runScenario(featureFile: "MotusTest.feature",
-                                 scenario: "Proposer le mot optimal sur le Lexique de WORDLE après plusieurs tentatives",
+                                 scenario: "Proposer le mot optimal sur le Lexique de WORDLE EN après plusieurs tentatives",
                                  testCase: self,
                                  mapStepDefiner: MotusStepsDefinition.self)
     }
