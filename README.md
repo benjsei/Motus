@@ -1,9 +1,9 @@
 # motus
 
-Algorithme pour tricher à Wordle, développé en SWIFT et FullBDD.
+Algorithme pour tricher 😉 à Wordle, développé en SWIFT et FullBDD.
 
-Inspiration suite à l'article et la vidéo de la super chaîne YouTube:Science Etonnante: https://www.youtube.com/watch?v=iw4_7ioHWF4&t=1s (⭐⭐⭐⭐⭐)
-Elle-même inspirée de 3Blue1Brown : https://www.youtube.com/watch?v=v68zYyaEmEA&t=0s
+Inspiration suite à l'article et la vidéo de la super chaîne YouTube:Science Etonnante 😍: https://www.youtube.com/watch?v=iw4_7ioHWF4&t=1s
+Elle-même inspirée de 3Blue1Brown 😍 : https://www.youtube.com/watch?v=v68zYyaEmEA&t=0s
 
 # Fonctionnalités
 
