@@ -32,6 +32,13 @@ class MotusTest: XCTestCase {
                                  mapStepDefiner: MotusStepsDefinition.self)
     }
 
+    func test_motus_proposerLeMotOptimalListeVide() {
+        NativeRunner.runScenario(featureFile: "MotusTest.feature",
+                                 scenario: "Ne pas proposer le mot optimal si la liste de mots est vide",
+                                 testCase: self,
+                                 mapStepDefiner: MotusStepsDefinition.self)
+    }
+
 //    func test_motus_proposerLeMotOptimalPourDuVrai() {
 //        NativeRunner.runScenario(featureFile: "MotusTest.feature",
 //                                 scenario: "Proposer le mot optimal sur le Lexique de WORDLE FR",
@@ -56,12 +63,12 @@ class MotusTest: XCTestCase {
 
 private final class MotusStepsDefinition: StepDefiner {
     var motsDepart: [String] = []
-    var motInitial = ""
-    var motTente = ""
-    var evaluation = ""
+    var motInitial = Constantes.Chaines.vide
+    var motTente = Constantes.Chaines.vide
+    var evaluation = Constantes.Chaines.vide
     var motus = Motus()
-    var correspondances = ""
-    var proposition = ""
+    var correspondances = Constantes.Chaines.vide
+    var proposition = Constantes.Chaines.vide
 
     private func setUp() {
         motus = Motus()

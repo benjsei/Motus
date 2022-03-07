@@ -38,6 +38,11 @@ Fonctionnalité: Motus
         Étant donné que Le dictionnaire "Lexique_WORDLE_FR" est chargé
         Quand Je veux avoir le mot avec le plus de correspondance moyenne
         Alors Le mot proposé est "RAIES"
+        
+    Scénario: Ne pas proposer le mot optimal si la liste de mots est vide
+        Étant donné que Le dictionnaire "Lexique_Vide" est chargé
+        Quand Je veux avoir le mot avec le plus de correspondance moyenne
+        Alors Le mot proposé est "AUCUNE PROPOSITION"
 
     Scénario: Proposer le mot optimal sur le Lexique de WORDLE FR après plusieurs tentatives
         Étant donné que Le dictionnaire "Lexique_WORDLE_FR" est chargé

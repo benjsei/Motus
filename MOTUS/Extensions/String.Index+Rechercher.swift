@@ -1,5 +1,5 @@
 //
-//  StringIndex+Rechercher.swift
+//  String.Index+Rechercher.swift
 //  MOTUS
 //
 //  Created by Benjamin SEILLIER on 06/03/2022.

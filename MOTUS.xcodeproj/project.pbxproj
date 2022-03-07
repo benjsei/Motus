@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		6B4C00BB27D2560E00A9B74B /* MOTUSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C00BA27D2560E00A9B74B /* MOTUSApp.swift */; };
-		6B4C00BD27D2560E00A9B74B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C00BC27D2560E00A9B74B /* ContentView.swift */; };
 		6B4C00BF27D2561100A9B74B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B4C00BE27D2561100A9B74B /* Assets.xcassets */; };
 		6B4C00C227D2561100A9B74B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B4C00C127D2561100A9B74B /* Preview Assets.xcassets */; };
 		6B4C00E627D256CC00A9B74B /* MotusTest.feature in Resources */ = {isa = PBXBuildFile; fileRef = 6B4C00E427D256CC00A9B74B /* MotusTest.feature */; };
@@ -17,14 +16,13 @@
 		6B4C00F027D27BB200A9B74B /* XCTest_Gherkin in Frameworks */ = {isa = PBXBuildFile; productRef = 6B4C00EF27D27BB200A9B74B /* XCTest_Gherkin */; };
 		6B4C00F227D27C3600A9B74B /* StepDefiner+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C00F127D27C3600A9B74B /* StepDefiner+Helper.swift */; };
 		6B4C013827D2829D00A9B74B /* Motus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C013027D2829D00A9B74B /* Motus.swift */; };
-		6B4C013A27D2829D00A9B74B /* Critere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C013227D2829D00A9B74B /* Critere.swift */; };
 		6B4C014527D2831B00A9B74B /* Collection+Rechercher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C013F27D2831B00A9B74B /* Collection+Rechercher.swift */; };
-		6B4C014627D2831B00A9B74B /* StringIndex+Rechercher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C014027D2831B00A9B74B /* StringIndex+Rechercher.swift */; };
+		6B4C014627D2831B00A9B74B /* String.Index+Rechercher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C014027D2831B00A9B74B /* String.Index+Rechercher.swift */; };
 		6B4C014727D2831B00A9B74B /* Array+Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C014127D2831B00A9B74B /* Array+Filter.swift */; };
 		6B4C014827D2831B00A9B74B /* StringProtocol+Rechercher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C014227D2831B00A9B74B /* StringProtocol+Rechercher.swift */; };
 		6B4C014927D2831B00A9B74B /* String+EstCorrespondant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C014327D2831B00A9B74B /* String+EstCorrespondant.swift */; };
 		6B4C014A27D2831B00A9B74B /* String+Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C014427D2831B00A9B74B /* String+Modifier.swift */; };
-		6B4C014C27D2837000A9B74B /* Chaines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C014B27D2837000A9B74B /* Chaines.swift */; };
+		6B4C014C27D2837000A9B74B /* Constantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C014B27D2837000A9B74B /* Constantes.swift */; };
 		6B4C014E27D283F600A9B74B /* Proposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C014D27D283F600A9B74B /* Proposition.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,7 +39,6 @@
 /* Begin PBXFileReference section */
 		6B4C00B727D2560E00A9B74B /* MOTUS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOTUS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B4C00BA27D2560E00A9B74B /* MOTUSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOTUSApp.swift; sourceTree = "<group>"; };
-		6B4C00BC27D2560E00A9B74B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6B4C00BE27D2561100A9B74B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B4C00C127D2561100A9B74B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6B4C00C727D2561200A9B74B /* MOTUSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MOTUSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,14 +47,13 @@
 		6B4C00E827D2578A00A9B74B /* lexiques */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lexiques; sourceTree = "<group>"; };
 		6B4C00F127D27C3600A9B74B /* StepDefiner+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StepDefiner+Helper.swift"; sourceTree = "<group>"; };
 		6B4C013027D2829D00A9B74B /* Motus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Motus.swift; sourceTree = "<group>"; };
-		6B4C013227D2829D00A9B74B /* Critere.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Critere.swift; sourceTree = "<group>"; };
 		6B4C013F27D2831B00A9B74B /* Collection+Rechercher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Rechercher.swift"; sourceTree = "<group>"; };
-		6B4C014027D2831B00A9B74B /* StringIndex+Rechercher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StringIndex+Rechercher.swift"; sourceTree = "<group>"; };
+		6B4C014027D2831B00A9B74B /* String.Index+Rechercher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String.Index+Rechercher.swift"; sourceTree = "<group>"; };
 		6B4C014127D2831B00A9B74B /* Array+Filter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Filter.swift"; sourceTree = "<group>"; };
 		6B4C014227D2831B00A9B74B /* StringProtocol+Rechercher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StringProtocol+Rechercher.swift"; sourceTree = "<group>"; };
 		6B4C014327D2831B00A9B74B /* String+EstCorrespondant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+EstCorrespondant.swift"; sourceTree = "<group>"; };
 		6B4C014427D2831B00A9B74B /* String+Modifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Modifier.swift"; sourceTree = "<group>"; };
-		6B4C014B27D2837000A9B74B /* Chaines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chaines.swift; sourceTree = "<group>"; };
+		6B4C014B27D2837000A9B74B /* Constantes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constantes.swift; sourceTree = "<group>"; };
 		6B4C014D27D283F600A9B74B /* Proposition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Proposition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,9 +97,11 @@
 		6B4C00B927D2560E00A9B74B /* MOTUS */ = {
 			isa = PBXGroup;
 			children = (
-				6B4C012D27D2829D00A9B74B /* Moteur */,
+				6B4C014B27D2837000A9B74B /* Constantes.swift */,
+				6B4C013E27D2831B00A9B74B /* Extensions */,
+				6B4C013027D2829D00A9B74B /* Motus.swift */,
+				6B4C014D27D283F600A9B74B /* Proposition.swift */,
 				6B4C00BA27D2560E00A9B74B /* MOTUSApp.swift */,
-				6B4C00BC27D2560E00A9B74B /* ContentView.swift */,
 				6B4C00BE27D2561100A9B74B /* Assets.xcassets */,
 				6B4C00C027D2561100A9B74B /* Preview Content */,
 			);
@@ -129,23 +127,11 @@
 			path = MOTUSTests;
 			sourceTree = "<group>";
 		};
-		6B4C012D27D2829D00A9B74B /* Moteur */ = {
-			isa = PBXGroup;
-			children = (
-				6B4C014B27D2837000A9B74B /* Chaines.swift */,
-				6B4C013E27D2831B00A9B74B /* Extensions */,
-				6B4C013027D2829D00A9B74B /* Motus.swift */,
-				6B4C014D27D283F600A9B74B /* Proposition.swift */,
-				6B4C013227D2829D00A9B74B /* Critere.swift */,
-			);
-			path = Moteur;
-			sourceTree = "<group>";
-		};
 		6B4C013E27D2831B00A9B74B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				6B4C013F27D2831B00A9B74B /* Collection+Rechercher.swift */,
-				6B4C014027D2831B00A9B74B /* StringIndex+Rechercher.swift */,
+				6B4C014027D2831B00A9B74B /* String.Index+Rechercher.swift */,
 				6B4C014127D2831B00A9B74B /* Array+Filter.swift */,
 				6B4C014227D2831B00A9B74B /* StringProtocol+Rechercher.swift */,
 				6B4C014327D2831B00A9B74B /* String+EstCorrespondant.swift */,
@@ -288,11 +274,9 @@
 				6B4C014A27D2831B00A9B74B /* String+Modifier.swift in Sources */,
 				6B4C013827D2829D00A9B74B /* Motus.swift in Sources */,
 				6B4C014927D2831B00A9B74B /* String+EstCorrespondant.swift in Sources */,
-				6B4C014C27D2837000A9B74B /* Chaines.swift in Sources */,
-				6B4C00BD27D2560E00A9B74B /* ContentView.swift in Sources */,
+				6B4C014C27D2837000A9B74B /* Constantes.swift in Sources */,
 				6B4C014E27D283F600A9B74B /* Proposition.swift in Sources */,
-				6B4C013A27D2829D00A9B74B /* Critere.swift in Sources */,
-				6B4C014627D2831B00A9B74B /* StringIndex+Rechercher.swift in Sources */,
+				6B4C014627D2831B00A9B74B /* String.Index+Rechercher.swift in Sources */,
 				6B4C00BB27D2560E00A9B74B /* MOTUSApp.swift in Sources */,
 				6B4C014827D2831B00A9B74B /* StringProtocol+Rechercher.swift in Sources */,
 				6B4C014527D2831B00A9B74B /* Collection+Rechercher.swift in Sources */,

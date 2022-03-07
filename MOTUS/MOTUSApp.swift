@@ -11,7 +11,7 @@ import SwiftUI
 struct MOTUSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EmptyView()
         }
     }
 }

@@ -8,24 +8,16 @@
 import SwiftUI
 
 class Motus {
-    private let nombreLettre = 5
-    private let criteres: [Critere]
     private var dictionnaire: [String] = []
-
-    init() {
-        criteres = [Critere.incorrect, Critere.partiel, Critere.correct]
-    }
 
     func charger(_ fichier: String) {
         do {
             let contenu = try String(contentsOfFile: fichier)
             dictionnaire = contenu
-                .components(separatedBy: Chaines.retourChariot)
+                .components(separatedBy: Constantes.Chaines.retourChariot)
                 .map { $0.uppercased() }
-                .filter { $0 != Chaines.vide }
-        } catch {
-            print("Fatal Error: \(error.localizedDescription)")
-        }
+                .filter { $0 != Constantes.Chaines.vide }
+        } catch {}
     }
 
     func ajouterReponse(_ reponse: String, _ resultat: String) {
@@ -39,12 +31,12 @@ class Motus {
 
     func proposer() -> String {
         guard !dictionnaire.isEmpty else {
-            return Chaines.vide
+            return Constantes.Chaines.aucuneProposition
         }
 
         let toutesLesCorrespondances = recupererToutesCorrespondances()
         let propositions = recupererPropositions(toutesLesCorrespondances)
-        return propositions.max(by: { $0.entropie < $1.entropie })?.mot ?? Chaines.vide
+        return propositions.max(by: { $0.entropie < $1.entropie })?.mot ?? Constantes.Chaines.vide
     }
 
     private func recupererPropositions(_ toutesLesCorrespondances: [String]) -> [Proposition] {
@@ -59,9 +51,9 @@ class Motus {
     }
 
     private func recupererToutesCorrespondances() -> [String] {
-        var nouveau: [String] = [Chaines.vide]
+        var nouveau: [String] = [Constantes.Chaines.vide]
 
-        for _ in 1 ... nombreLettre {
+        for _ in 1 ... Constantes.Parametres.nombreLettre {
             nouveau = ajouterNiveau(nouveau)
         }
 
@@ -72,7 +64,8 @@ class Motus {
         var nouveau: [String] = []
         correspondances
             .forEach { correspondance in
-                criteres
+                Constantes
+                    .criteres
                     .forEach { critere in
                         nouveau.append(correspondance + critere.rawValue)
                     }
