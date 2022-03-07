@@ -1,4 +1,4 @@
-# Motus - ⬛🟩🟩🟧⬛ - [![Build Status](https://app.bitrise.io/app/bf84ec4a349615c9/status.svg?token=C1x4uXeE46S2VbJbZDFycw&branch=master)](https://app.bitrise.io/app/bf84ec4a349615c9)
+# Motus - ⬛🟩🟩🟧⬛ - [![MOTUS](https://github.com/benjsei/Motus/actions/workflows/motus.yml/badge.svg)](https://github.com/benjsei/Motus/actions/workflows/motus.yml) - [![codecov](https://codecov.io/gh/benjsei/Motus/branch/master/graph/badge.svg?token=RM6QETZD2C)](https://codecov.io/gh/benjsei/Motus)
 
 Algorithme pour tricher à Wordle 😉, développé en SWIFT et FullBDD.
 

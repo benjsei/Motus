@@ -18,6 +18,7 @@ Fonctionnalité: Motus
         | PELVL      | BELLE    | 02211         | NON               |
         | PCCEL      | BELLE    | 01100         | OUI               |
         | ILEAL      | BELLE    | 01100         | NON               |
+        | ILEAL      | BELLE    | 01103         | NON               |
         
     Scénario: Calculer le nombre de mots correspondants
         Étant donné que Le dictionnaire "Lexique_DOUBLELETTRE" est chargé
