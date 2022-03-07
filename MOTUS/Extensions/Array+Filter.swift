@@ -18,15 +18,4 @@ extension Array where Element == String {
 
         return source
     }
-
-    func sansCorrespondances(_ motTente: String, _ correspondances: String) -> [String] {
-        var source = self
-
-        source
-            .removeAll { mot in
-                mot.estCorrespondant(motTente, correspondances)
-            }
-
-        return source
-    }
 }
