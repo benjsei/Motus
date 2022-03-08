@@ -26,6 +26,7 @@ Elle-même inspirée de 😍 3Blue1Brown : https://www.youtube.com/watch?v=v68zY
         | PELVL      | BELLE    | ⬛🟩🟩🟧🟧    | ❌               |
         | PCCEL      | BELLE    | ⬛🟧🟧⬛⬛    | ✅               |
         | ILEAL      | BELLE    | ⬛🟧🟧⬛⬛    | ❌               |
+        | DAGUE      | DAGUE    | 🟪🟩🟩🟩🟩    | ❌               |
 
  ## Règle 2: Compter le nombre de mots correspondants (✅) dans une liste de mots par rapport à un mot donné (MotTente) et à une évaluation lettre par lettre (🟩🟧⬛).
        
