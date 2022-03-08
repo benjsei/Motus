@@ -15,6 +15,6 @@ jobs:
       - name: Test
         uses: actions/checkout@v1
       - name: Build and Test
-        run:  xcodebuild test -project MOTUS.xcodeproj -scheme MOTUS -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.2' -enableCodeCoverage YES build test
+        run:  xcodebuild test -project MOTUS.xcodeproj -scheme MOTUS -enableCodeCoverage YES build test
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1.2.1

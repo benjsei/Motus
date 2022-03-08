@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6B4C00B627D2560E00A9B74B"
+               BlueprintIdentifier = "6B50A60427D74226006B103E"
                BuildableName = "MOTUS.app"
                BlueprintName = "MOTUS"
                ReferencedContainer = "container:MOTUS.xcodeproj">
@@ -33,7 +33,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6B4C00C627D2561200A9B74B"
+               BlueprintIdentifier = "6B50A61527D74228006B103E"
                BuildableName = "MOTUSTests.xctest"
                BlueprintName = "MOTUSTests"
                ReferencedContainer = "container:MOTUS.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6B4C00B627D2560E00A9B74B"
+            BlueprintIdentifier = "6B50A60427D74226006B103E"
             BuildableName = "MOTUS.app"
             BlueprintName = "MOTUS"
             ReferencedContainer = "container:MOTUS.xcodeproj">
@@ -72,7 +72,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6B4C00B627D2560E00A9B74B"
+            BlueprintIdentifier = "6B50A60427D74226006B103E"
             BuildableName = "MOTUS.app"
             BlueprintName = "MOTUS"
             ReferencedContainer = "container:MOTUS.xcodeproj">
