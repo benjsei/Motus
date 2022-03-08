@@ -6,7 +6,6 @@
 //
 
 @testable import MOTUS
-import SwiftUI
 import XCTest
 import XCTest_Gherkin
 
@@ -39,16 +38,23 @@ class MotusTest: XCTestCase {
                                  mapStepDefiner: MotusStepsDefinition.self)
     }
 
-    func test_motus_proposerLeMotOptimalPourDuVraiaprerspremierereponse_FR() {
+    func test_motus_proposerLeSeulMotCandidat() {
         NativeRunner.runScenario(featureFile: "MotusTest.feature",
-                                 scenario: "Proposer le mot optimal sur le Lexique de WORDLE FR après plusieurs tentatives",
+                                 scenario: "Proposer le seul mot candidat",
                                  testCase: self,
                                  mapStepDefiner: MotusStepsDefinition.self)
     }
 
-    func test_motus_proposerLeMotOptimalPourDuVraiaprerspremierereponse_EN() {
+    func test_motus_proposerUnDesTroisDerniersMotCandidast() {
         NativeRunner.runScenario(featureFile: "MotusTest.feature",
-                                 scenario: "Proposer le mot optimal sur le Lexique de WORDLE EN après plusieurs tentatives",
+                                 scenario: "Proposer un des trois derniers mots candidats",
+                                 testCase: self,
+                                 mapStepDefiner: MotusStepsDefinition.self)
+    }
+
+    func test_motus_proposerLeMotOptimalApresPlusieursReponses() {
+        NativeRunner.runScenario(featureFile: "MotusTest.feature",
+                                 scenario: "Proposer le mot optimal après plusieurs tentatives",
                                  testCase: self,
                                  mapStepDefiner: MotusStepsDefinition.self)
     }

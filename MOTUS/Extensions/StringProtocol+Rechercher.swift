@@ -5,8 +5,6 @@
 //  Created by Benjamin SEILLIER on 06/03/2022.
 //
 
-import SwiftUI
-
 extension StringProtocol {
     subscript(offset: Int) -> Character {
         self[index(startIndex, offsetBy: offset)]

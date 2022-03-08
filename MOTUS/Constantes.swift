@@ -10,6 +10,8 @@ import SwiftUI
 enum Constantes {
     enum Parametres {
         static let nombreLettre = 5
+        static let nombreMinumumReponse = 1
+        static let nombreMinumumRestants = 4
     }
 
     enum Chaines {

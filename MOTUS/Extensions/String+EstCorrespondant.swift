@@ -5,8 +5,6 @@
 //  Created by Benjamin SEILLIER on 06/03/2022.
 //
 
-import SwiftUI
-
 extension String {
     func estCorrespondant(_ motTenteOrigine: String, _ correspondances: String) -> Bool {
         var motEnTraitement = uppercased()

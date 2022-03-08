@@ -40,18 +40,19 @@ Fonctionnalité: Motus
         Quand Je veux avoir le mot avec le plus de correspondance moyenne
         Alors Le mot proposé est "AUCUNE PROPOSITION"
 
-    Scénario: Proposer le mot optimal sur le Lexique de WORDLE FR après plusieurs tentatives
-        Étant donné que Le dictionnaire "Lexique_WORDLE_FR" est chargé
-        Et La reponse essayée est "RAIES" avec comme résultat "02022"
-        Et La reponse essayée est "LAMES" avec comme résultat "02022"
+    Scénario: Proposer le seul mot candidat
+        Étant donné que Le dictionnaire "Lexique_1" est chargé
         Quand Je veux avoir le mot avec le plus de correspondance moyenne
-        Alors Le mot proposé est "TAPES"
+        Alors Le mot proposé est "NOYAU"
+        
+    Scénario: Proposer un des trois derniers mots candidats
+        Étant donné que Le dictionnaire "Lexique_3" est chargé
+        Quand Je veux avoir le mot avec le plus de correspondance moyenne
+        Alors Le mot proposé est "NOYAU"
 
-    Scénario: Proposer le mot optimal sur le Lexique de WORDLE EN après plusieurs tentatives
-        Étant donné que Le dictionnaire "Lexique_WORDLE_EN" est chargé
-        Et La reponse essayée est "IDLES" avec comme résultat "00100"
-        Et La reponse essayée est "LOURY" avec comme résultat "11000"
-        Et La reponse essayée est "GLOOP" avec comme résultat "02200"
-        Et La reponse essayée est "FLOTA" avec comme résultat "02220"
+    Scénario: Proposer le mot optimal après plusieurs tentatives
+        Étant donné que Le dictionnaire "Lexique_WORDLE_FR" est chargé
+        Et La reponse essayée est "TARIE" avec comme résultat "01012"
+        Et La reponse essayée est "ANILS" avec comme résultat "20100"
         Quand Je veux avoir le mot avec le plus de correspondance moyenne
-        Alors Le mot proposé est "CLOTH"
+        Alors Le mot proposé est "ETUDE"

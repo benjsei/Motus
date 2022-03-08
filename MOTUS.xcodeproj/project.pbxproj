@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B39EEB427D7BDB100BE8E4B /* Float+Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B39EEB327D7BDB000BE8E4B /* Float+Condition.swift */; };
 		6B50A60927D74226006B103E /* MOTUSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B50A60827D74226006B103E /* MOTUSApp.swift */; };
 		6B50A60D27D74228006B103E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B50A60C27D74228006B103E /* Assets.xcassets */; };
 		6B50A61027D74228006B103E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B50A60F27D74228006B103E /* Preview Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B39EEB327D7BDB000BE8E4B /* Float+Condition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Float+Condition.swift"; sourceTree = "<group>"; };
 		6B50A60527D74226006B103E /* MOTUS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MOTUS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B50A60827D74226006B103E /* MOTUSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOTUSApp.swift; sourceTree = "<group>"; };
 		6B50A60C27D74228006B103E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		6B50A63B27D742F5006B103E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				6B39EEB327D7BDB000BE8E4B /* Float+Condition.swift */,
 				6B50A63C27D742F5006B103E /* String.Index+Rechercher.swift */,
 				6B50A63D27D742F5006B103E /* Collection+Rechercher.swift */,
 				6B50A63E27D742F5006B103E /* Array+Filter.swift */,
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B50A64827D742F5006B103E /* StringProtocol+Rechercher.swift in Sources */,
+				6B39EEB427D7BDB100BE8E4B /* Float+Condition.swift in Sources */,
 				6B50A64627D742F5006B103E /* Collection+Rechercher.swift in Sources */,
 				6B50A64B27D742F5006B103E /* Proposition.swift in Sources */,
 				6B50A64C27D742F5006B103E /* Motus.swift in Sources */,

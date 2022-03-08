@@ -5,10 +5,16 @@
 //  Created by Benjamin SEILLIER on 06/03/2022.
 //
 
-import SwiftUI
+import Darwin
 
 class Motus {
     private var dictionnaire: [String] = []
+    private var dictionnaireRestant: [String] = []
+    private var toutesCorrespondances: [String] = []
+
+    init() {
+        toutesCorrespondances = recupererToutesCorrespondances()
+    }
 
     func charger(_ fichier: String) {
         do {
@@ -17,33 +23,41 @@ class Motus {
                 .components(separatedBy: Constantes.Chaines.retourChariot)
                 .map { $0.uppercased() }
                 .filter { $0 != Constantes.Chaines.vide }
+
+            dictionnaireRestant = dictionnaire
         } catch {}
     }
 
-    func ajouterReponse(_ reponse: String, _ resultat: String) {
-        dictionnaire = dictionnaire.avecCorrespondances(reponse, resultat)
+    func ajouterReponse(_ mot: String, _ correspondance: String) {
+        dictionnaireRestant = dictionnaireRestant.avecCorrespondance(mot, correspondance)
     }
 
-    func nombreCorrespondance(_ motTente: String, _ correspondances: String) -> Int {
-        let motsCandidats = dictionnaire.avecCorrespondances(motTente, correspondances)
+    func nombreCorrespondance(_ motTente: String, _ correspondance: String) -> Int {
+        let motsCandidats = dictionnaireRestant.avecCorrespondance(motTente, correspondance)
         return motsCandidats.count
     }
 
     func proposer() -> String {
-        guard !dictionnaire.isEmpty else {
-            return Constantes.Chaines.aucuneProposition
+        guard dictionnaireRestant.count > Constantes.Parametres.nombreMinumumReponse else {
+            return dictionnaireRestant.first ?? Constantes.Chaines.aucuneProposition
         }
-
-        let toutesLesCorrespondances = recupererToutesCorrespondances()
-        let propositions = recupererPropositions(toutesLesCorrespondances)
+        let candidats = getCandidats()
+        let propositions = recupererPropositions(candidats)
         return propositions.max(by: { $0.entropie < $1.entropie })?.mot ?? Constantes.Chaines.vide
     }
 
-    private func recupererPropositions(_ toutesLesCorrespondances: [String]) -> [Proposition] {
+    private func getCandidats() -> [String] {
+        if dictionnaireRestant.count < Constantes.Parametres.nombreMinumumRestants {
+            return dictionnaireRestant
+        }
+        return dictionnaire
+    }
+
+    private func recupererPropositions(_ candidats: [String]) -> [Proposition] {
         var propositions = [Proposition]()
-        dictionnaire
-            .forEach { mot in
-                let proposition = evaluerProposition(mot, toutesLesCorrespondances, dictionnaire.count)
+        candidats
+            .forEach { candidat in
+                let proposition = evaluerProposition(candidat)
                 propositions.append(proposition)
             }
 
@@ -73,13 +87,13 @@ class Motus {
         return nouveau
     }
 
-    private func calculerSommeInformation(_ mot: String, _ correspondances: [String], _: Int) -> Float {
-        var sommeInformation: Float = 0.00
+    private func calculerSommeInformation(_ mot: String) -> Float {
+        var sommeInformation = Float(0.00)
 
-        correspondances
+        toutesCorrespondances
             .forEach { correspondance in
-                let reduction = Float(nombreCorrespondance(mot, correspondance)) / Float(dictionnaire.count)
-                if reduction > 0 {
+                let reduction = Float(nombreCorrespondance(mot, correspondance)) / Float(dictionnaireRestant.count)
+                if reduction.estPositifNonNul {
                     let information = -1 * reduction * log2(reduction)
                     sommeInformation += information
                 }
@@ -88,9 +102,9 @@ class Motus {
         return sommeInformation
     }
 
-    private func evaluerProposition(_ mot: String, _ correspondances: [String], _: Int) -> Proposition {
-        let sommeInformation = calculerSommeInformation(mot, correspondances, dictionnaire.count)
-        let entropie = sommeInformation / Float(correspondances.count)
+    private func evaluerProposition(_ mot: String) -> Proposition {
+        let sommeInformation = calculerSommeInformation(mot)
+        let entropie = sommeInformation / Float(toutesCorrespondances.count)
         return Proposition(mot: mot.uppercased(), entropie: entropie)
     }
 }
