@@ -12,7 +12,7 @@ Elle-même inspirée de 😍 3Blue1Brown : https://www.youtube.com/watch?v=v68zY
 ### Scénario: Calculer la correspondance d'un mot
         Étant donné que Le mot candidat est "<Candidat>"
         Et    La reponse est "<Reponse>"
-        Quand Levaulation est "<Evaluation>"
+        Quand L'évaluation est "<Evaluation>"
         Alors La correspondance est "<Correspondance>"
     Exemples:
         | Candidat   | Reponse  | Evaluation  | Correspondance   |

@@ -39,13 +39,6 @@ class MotusTest: XCTestCase {
                                  mapStepDefiner: MotusStepsDefinition.self)
     }
 
-//    func test_motus_proposerLeMotOptimalPourDuVrai() {
-//        NativeRunner.runScenario(featureFile: "MotusTest.feature",
-//                                 scenario: "Proposer le mot optimal sur le Lexique de WORDLE FR",
-//                                 testCase: self,
-//                                 mapStepDefiner: MotusStepsDefinition.self)
-//    }
-
     func test_motus_proposerLeMotOptimalPourDuVraiaprerspremierereponse_FR() {
         NativeRunner.runScenario(featureFile: "MotusTest.feature",
                                  scenario: "Proposer le mot optimal sur le Lexique de WORDLE FR après plusieurs tentatives",
@@ -97,7 +90,7 @@ private final class MotusStepsDefinition: StepDefiner {
             self.motTente = reponse
         }
 
-        step(exactly: "Levaulation est \"(.+)\"") { (evaulation: String) in
+        step(exactly: "L'évaluation est \"(.+)\"") { (evaulation: String) in
             self.evaluation = evaulation
         }
 

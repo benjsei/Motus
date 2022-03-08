@@ -4,7 +4,7 @@ Fonctionnalité: Motus
     Scénario: Calculer la correspondance d'un mot
         Étant donné que Le mot candidat est "<Candidat>"
         Et    La reponse est "<Reponse>"
-        Quand Levaulation est "<Evaluation>"
+        Quand L'évaluation est "<Evaluation>"
         Alors La correspondance est "<Correspondance>"
     Exemples:
         | Candidat   | Reponse  | Evaluation    | Correspondance    |
@@ -18,7 +18,7 @@ Fonctionnalité: Motus
         | PELVL      | BELLE    | 02211         | NON               |
         | PCCEL      | BELLE    | 01100         | OUI               |
         | ILEAL      | BELLE    | 01100         | NON               |
-        | ILEAL      | BELLE    | 01103         | NON               |
+        | DAGUE      | DAGUE    | 32222         | NON               |
         
     Scénario: Calculer le nombre de mots correspondants
         Étant donné que Le dictionnaire "Lexique_DOUBLELETTRE" est chargé
@@ -34,11 +34,6 @@ Fonctionnalité: Motus
         Étant donné que Le dictionnaire "Lexique_100" est chargé
         Quand Je veux avoir le mot avec le plus de correspondance moyenne
         Alors Le mot proposé est "SOUTE"
-
-    Scénario: Proposer le mot optimal sur le Lexique de WORDLE FR
-        Étant donné que Le dictionnaire "Lexique_WORDLE_FR" est chargé
-        Quand Je veux avoir le mot avec le plus de correspondance moyenne
-        Alors Le mot proposé est "RAIES"
         
     Scénario: Ne pas proposer le mot optimal si la liste de mots est vide
         Étant donné que Le dictionnaire "Lexique_Vide" est chargé
